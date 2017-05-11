@@ -1,3 +1,24 @@
+## USING
+""
+sudo apt-get install libtool libglib2.0-dev gobject-introspection libgmp3-dev nettle-dev asciidoc glib-networking
+wget http://megatools.megous.com/builds/megatools-1.9.94.tar.gz
+zcat megatools-1.9.94.tar.gz > megatools-1.9.94.tar
+tar -xf megatools-1.9.94.tar
+cd megatools-1.9.94/
+./configure
+make
+sudo make install
+sudo apt-get install exfat-utils exfat-fuse
+""
+## Account Configuration
+nano .megarc
+""
+[Login]
+Username = abc@xyz.com
+Password = xyz
+""
+
+
 megatools - command line client application for Mega
 ====================================================
 
